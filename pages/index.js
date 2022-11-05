@@ -14,8 +14,8 @@ export default function Home() {
       <Header />
       <ImagesSection />
       <PlayersSection />
-      {/*<PrizePool />
-      <OurPartners />
+      <PrizePool />
+      {/*<OurPartners />
       <OurRoadmap />
       <OurExperience />
       <Faqs />
