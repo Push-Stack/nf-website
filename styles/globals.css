@@ -6,4 +6,7 @@
   * {
     @apply font-montserrat;
   }
+  body {
+    @apply bg-black;
+  }
 }

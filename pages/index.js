@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <div className="h-screen">
       <Header />
-      {/* <ImagesSection />
-      <PlayersSection />
+      <ImagesSection />
+      {/*<PlayersSection />
       <PrizePool />
       <OurPartners />
       <OurRoadmap />
