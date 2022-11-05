@@ -23,14 +23,14 @@ const PrizePool = () => {
           Win the Prize Pool
         </h1>
         <div className="flex flex-col gap-2">
-          <h3 className="text-xl sm:text-2xl max-w-sm">
+          <h3 className="text-xl sm:text-2xl lg:max-w-sm">
             Show off your skills,earn tickets,
             <span className="block">and dominate the leader board</span>
           </h3>
-          <h3 className=" text-xl sm:text-2xl text-secondary font-bold max-w-xs uppercase">
-            Benefits of the Prize <span className="block">Pool:</span>
+          <h3 className=" text-xl sm:text-2xl text-secondary font-bold lg:max-w-xs uppercase">
+            Benefits of the Prize <span className="lg:block">Pool:</span>
           </h3>
-          <div className=" text-secondary text-xl sm:text-2xl  max-w-sm">
+          <div className=" text-secondary text-xl sm:text-2xl  lg:max-w-sm">
             <p>1. Skill based winners</p>
             <p>2. Fair chance for all gamers to win</p>
             <p>3. Leaderboard updates in real time</p>
