@@ -3,7 +3,7 @@ import React from "react";
 
 const PlayersSection = () => {
   return (
-    <div className="relative bg-black pt-48 pb-36 ">
+    <div className="relative  pt-48 pb-36 ">
       <Image
         src="/static/player-section-bg.png"
         fill
