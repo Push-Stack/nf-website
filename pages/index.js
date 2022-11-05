@@ -13,8 +13,8 @@ export default function Home() {
     <div className="h-screen">
       <Header />
       <ImagesSection />
-      {/*<PlayersSection />
-      <PrizePool />
+      <PlayersSection />
+      {/*<PrizePool />
       <OurPartners />
       <OurRoadmap />
       <OurExperience />
