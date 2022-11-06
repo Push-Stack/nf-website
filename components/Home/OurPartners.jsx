@@ -3,7 +3,10 @@ import React from "react";
 
 const OurPartners = () => {
   return (
-    <div className="py-20 flex flex-col items-center gap-10 relative">
+    <section
+      className="py-20 flex flex-col items-center gap-10 relative"
+      id="our-partners"
+    >
       <Image
         src="/static/ourpartners-background.png"
         alt="ourpartners-background"
@@ -22,7 +25,7 @@ const OurPartners = () => {
           height={538}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

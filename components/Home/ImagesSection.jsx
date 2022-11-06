@@ -4,7 +4,7 @@ import ImageItem from "./ImageItem";
 
 const ImagesSection = () => {
   return (
-    <div className="relative py-16 ">
+    <section className="relative py-16" id="images-section">
       <Image
         src="/static/image-section-bg.png"
         fill
@@ -38,7 +38,7 @@ const ImagesSection = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

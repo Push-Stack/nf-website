@@ -3,7 +3,7 @@ import React from "react";
 
 const PlayersSection = () => {
   return (
-    <div className="relative  pt-48 pb-36 ">
+    <section className="relative  pt-48 pb-36" id="players-section">
       <Image
         src="/static/player-section-bg.png"
         fill
@@ -20,7 +20,7 @@ const PlayersSection = () => {
           <span className="block">Win cash prizes daily</span>
         </h4>
       </div>
-    </div>
+    </section>
   );
 };
 

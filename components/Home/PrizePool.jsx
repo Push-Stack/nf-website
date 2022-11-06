@@ -3,7 +3,10 @@ import React from "react";
 
 const PrizePool = () => {
   return (
-    <div className="relative text-white flex items-center justify-center lg:justify-around ">
+    <section
+      className="relative text-white flex items-center justify-center lg:justify-around"
+      id="prizepool-section"
+    >
       <Image
         src="/static/prizepool-background.png"
         fill
@@ -53,7 +56,7 @@ const PrizePool = () => {
           height={661}
         />
       </div>
-    </div>
+    </section>
   );
 };
 
