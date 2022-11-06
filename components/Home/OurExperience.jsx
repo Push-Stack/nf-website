@@ -4,7 +4,7 @@ import React from "react";
 const OurExperience = () => {
   return (
     <section
-      className="py-20 flex flex-col items-center gap-14 relative"
+      className="py-20 flex flex-col items-center gap-10 relative"
       id="our-partners"
     >
       <Image
