@@ -10,7 +10,7 @@ const PlayersSection = () => {
         alt="player-section-background"
         className="z-10  "
       />
-      <div className="absolute z-20 inset-0 h-full w-full bg-black/80" />
+      <div className="absolute z-20 inset-0 h-full w-full bg-black/70" />
       <div className="text-white font-bold max-w-6xl mx-auto text-center uppercase flex flex-col gap-4 relative z-20">
         <h1 className="text-3xl sm:text-5xl text-secondary tracking-wider">
           Where Players come to play
