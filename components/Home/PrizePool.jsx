@@ -21,8 +21,8 @@ const PrizePool = () => {
         className="z-10  "
       />
 
-      <div className="px-4 lg:px-6 w-full lg:w-3/5 max-w-2xl mx-auto py-16  flex flex-col gap-4 relative z-20 ">
-        <h1 className="text-3xl sm:text-5xl font-bold text-secondary tracking-wider">
+      <div className="px-6  lg:px-6 w-full lg:w-3/5 max-w-2xl mx-auto py-16  flex flex-col gap-4 relative z-20 ">
+        <h1 className="text-3xl sm:text-4xl font-bold text-secondary tracking-wider">
           Win the Prize Pool
         </h1>
         <div className="flex flex-col gap-2">
@@ -38,7 +38,7 @@ const PrizePool = () => {
             <p>2. Fair chance for all gamers to win</p>
             <p>3. Leaderboard updates in real time</p>
           </div>
-          <div className="uppercase flex flex-col gap-2 mt-3 text-2xl sm:text-3xl tracking-wider font-bold">
+          <div className="uppercase flex flex-col gap-2 mt-3 text-xl sm:text-3xl tracking-wider font-bold">
             <p className="bg-secondary max-w-lg rounded text-black  p-2 ">
               1. The Prize Pool
             </p>

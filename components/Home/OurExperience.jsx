@@ -15,7 +15,7 @@ const OurExperience = () => {
       />
       <div className="absolute z-20 inset-0 h-full w-full bg-black/50" />
       <div className="relative z-20 flex flex-col gap-6 items-center px-4">
-        <h1 className="text-3xl sm:text-5xl font-bold text-white tracking-wider uppercase ">
+        <h1 className="text-3xl sm:text-4xl font-bold text-white tracking-wider uppercase ">
           Our <span className="text-secondary ">Experience</span>
         </h1>
         <p className="text-white uppercase text-center text-xl sm:text-2xl tracking-wide ">
