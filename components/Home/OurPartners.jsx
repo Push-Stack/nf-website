@@ -13,7 +13,7 @@ const OurPartners = () => {
         fill
         className="z-10"
       />
-      <div className="absolute z-20 inset-0 h-full w-full bg-black/90" />
+      <div className="absolute z-20 inset-0 h-full w-full bg-black/80" />
       <h1 className="text-3xl sm:text-4xl font-bold text-white tracking-wider uppercase relative z-20">
         Our <span className="text-secondary">Partners</span>
       </h1>
