@@ -39,8 +39,8 @@ const PrizePool = () => {
             <p>2. Fair chance for all gamers to win</p>
             <p>3. Leaderboard updates in real time</p>
           </div>
-          <div className="uppercase flex flex-col gap-2 mt-3 text-xl sm:text-3xl tracking-wider font-bold">
-            <p className="bg-secondary max-w-lg rounded text-black  p-2 ">
+          <div className="uppercase flex flex-col gap-2 mt-3 text-xl sm:text-2xl tracking-wider ">
+            <p className="bg-secondary font-bold max-w-lg rounded text-black  p-2 ">
               1. The Prize Pool
             </p>
             <p>2. We host it</p>

@@ -18,7 +18,7 @@ const OurExperience = () => {
         <h1 className="text-3xl sm:text-4xl font-bold text-white tracking-wider uppercase ">
           Our <span className="text-secondary ">Experience</span>
         </h1>
-        <p className="text-white uppercase text-center text-xl sm:text-2xl tracking-wide ">
+        <p className="text-white uppercase text-center text-lg sm:text-2xl tracking-wide ">
           Here are a few of the brands that we've worked with:
         </p>
       </div>
