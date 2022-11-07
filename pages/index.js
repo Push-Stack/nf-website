@@ -19,7 +19,7 @@ export default function Home() {
       {/* <OurRoadmap /> */}
       <OurExperience />
       {/* <Faqs /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
