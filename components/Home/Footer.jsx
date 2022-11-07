@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="py-14 bg-black text-white">
+    <footer className="py-14 bg-black text-white">
       <div className="px-4 max-w-xl mx-auto flex flex-col gap-8">
         <ul className="max-w-lg font-bold flex justify-evenly transition uppercase">
           <li className="hover:text-gray-200 cursor-pointer">Play</li>
@@ -28,11 +28,11 @@ const Footer = () => {
             />
           </a>
         </div>
-        <footer className="text-sm text-center sm:text-base sm:text-left">
+        <div className="text-sm text-center sm:text-base sm:text-left">
           Copyright &copy; 2022 Non Fungible Arcade. All Rights Reserved
-        </footer>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
