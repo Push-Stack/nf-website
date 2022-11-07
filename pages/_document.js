@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <title>Non Fungible Arcade</title>
         <link rel="icon" href="/static/icons/icon-48x48.png" type="image/png" />
         <link
           rel="apple-touch-icon"
