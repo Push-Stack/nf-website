@@ -1,9 +1,14 @@
 import Image from "next/image";
 import React from "react";
+import { roadmaps } from "../../constants/roadmap";
+import RoadmapItem from "./RoadmapItem";
 
 const OurRoadmap = () => {
   return (
-    <div className="py-14 text-white relative">
+    <section
+      id="roadmap"
+      className="py-16 text-white relative flex flex-col gap-20"
+    >
       <Image
         src="/static/roadmap-bg.png"
         alt="ourroadmap-background"
@@ -19,7 +24,17 @@ const OurRoadmap = () => {
           How we are bringing the arcade to the metaverse
         </p>
       </div>
-    </div>
+      <div className="px-4  w-full pt-14 max-w-7xl mx-auto flex   overflow-x-auto relative z-20 scroll-smooth scrollbar-hide">
+        {roadmaps.map((roadmap, index) => (
+          <RoadmapItem
+            key={index}
+            title={roadmap.title}
+            description={roadmap.description}
+            current={roadmap.current}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 
