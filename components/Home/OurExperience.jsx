@@ -12,6 +12,7 @@ const OurExperience = () => {
         alt="ourexperience-background"
         fill
         className="z-10"
+        priority
       />
       <div className="absolute z-20 inset-0 h-full w-full bg-black/50" />
       <div className="relative z-20 flex flex-col gap-6 items-center px-4">
