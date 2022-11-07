@@ -12,6 +12,7 @@ const PrizePool = () => {
         fill
         alt="prizepool-background"
         className="z-10"
+        priority
       />
 
       <Image

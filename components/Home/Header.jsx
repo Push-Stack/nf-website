@@ -9,6 +9,7 @@ const Header = () => {
         fill
         alt="header-cover"
         className="z-10"
+        priority
       />
       <div className="flex justify-center relative z-20 ">
         <ul className="text-white font-medium uppercase flex gap-6 sm:gap-32 text-md sm:text-lg">

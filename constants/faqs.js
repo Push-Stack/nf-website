@@ -17,6 +17,6 @@ export const faqs = [
   {
     question: "How do I submit my game?",
     answer:
-      "If you are a game developer who would like to submit a project to be placed in the arcade, please follow these steps!\n 1. Fill out this form\n 2. Wait for the green light\n3. We launch your game\n 4. You sit back & get paid",
+      "If you are a game developer who would like to submit a project to be placed in the arcade, please follow these steps!\n1. Fill out this form\n2. Wait for the green light\n3. We launch your game\n4. You sit back & get paid",
   },
 ];

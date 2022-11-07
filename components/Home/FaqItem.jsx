@@ -31,7 +31,11 @@ const FaqItem = ({ question, answer, id, changeItem, showItem }) => {
           <IoIosArrowDown className="flex-none text-3xl " />
         )}
       </div>
-      {activeItem && <div>{answer}</div>}
+      {activeItem && (
+        <div className="leading-loose font-medium whitespace-pre-wrap">
+          {answer}
+        </div>
+      )}
     </div>
   );
 };
