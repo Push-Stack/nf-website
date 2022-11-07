@@ -18,7 +18,11 @@ const FaqItem = ({ question, answer, id, changeItem, showItem }) => {
   };
 
   return (
-    <div className="w-full  rounded-md border-2 border-primary py-2 px-5 flex flex-col gap-4 ">
+    <div
+      className={`w-full  rounded-md border-2  py-2 px-5 flex flex-col gap-4 transition ${
+        activeItem ? "border-secondary" : "border-primary"
+      }`}
+    >
       <div
         className="w-full flex justify-between items-center gap-2 cursor-pointer"
         onClick={showHideItem}
