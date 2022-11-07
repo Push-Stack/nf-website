@@ -18,7 +18,7 @@ export default function Home() {
       <OurPartners />
       {/* <OurRoadmap /> */}
       <OurExperience />
-      {/* <Faqs /> */}
+      <Faqs />
       <Footer />
     </div>
   );

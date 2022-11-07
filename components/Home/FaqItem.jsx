@@ -1,9 +1,39 @@
-import React from 'react'
+import React, { useMemo } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-const FaqItem = () => {
+const FaqItem = ({ question, answer, id, changeItem, showItem }) => {
+  const activeItem = useMemo(() => {
+    if (showItem && showItem === id) {
+      return true;
+    }
+    return false;
+  }, [showItem]);
+
+  const showHideItem = () => {
+    if (activeItem) {
+      changeItem(null);
+      return;
+    }
+    changeItem(id);
+  };
+
   return (
-    <div>FaqItem</div>
-  )
-}
+    <div className="w-full  rounded-md border-2 border-primary py-2 px-5 flex flex-col gap-4 ">
+      <div
+        className="w-full flex justify-between items-center gap-2 cursor-pointer"
+        onClick={showHideItem}
+      >
+        <div className="text-secondary uppercase  font-bold ">{question}</div>
 
-export default FaqItem
+        {activeItem ? (
+          <IoIosArrowUp className="flex-none text-3xl" />
+        ) : (
+          <IoIosArrowDown className="flex-none text-3xl " />
+        )}
+      </div>
+      {activeItem && <div>{answer}</div>}
+    </div>
+  );
+};
+
+export default FaqItem;
