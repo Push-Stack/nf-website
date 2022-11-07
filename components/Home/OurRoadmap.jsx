@@ -1,9 +1,24 @@
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { roadmaps } from "../../constants/roadmap";
 import RoadmapItem from "./RoadmapItem";
 
 const OurRoadmap = () => {
+  const sliderRef = useRef(null);
+
+  const slideLeft = () => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollLeft += 150;
+    }
+  };
+
+  const slideRight = () => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollLeft -= 150;
+    }
+  };
+
   return (
     <section
       id="roadmap"
@@ -24,15 +39,33 @@ const OurRoadmap = () => {
           How we are bringing the arcade to the metaverse
         </p>
       </div>
-      <div className="px-4  w-full pt-14 max-w-7xl mx-auto flex   overflow-x-auto relative z-20 scroll-smooth scrollbar-hide">
-        {roadmaps.map((roadmap, index) => (
-          <RoadmapItem
-            key={index}
-            title={roadmap.title}
-            description={roadmap.description}
-            current={roadmap.current}
-          />
-        ))}
+      <div className="w-full group relative z-20 ">
+        <div
+          ref={sliderRef}
+          className="pl-4 pr-10  w-full pt-14 max-w-7xl mx-auto flex   overflow-x-auto   scroll-smooth scrollbar-hide "
+        >
+          {roadmaps.length && (
+            <IoIosArrowBack
+              onClick={slideLeft}
+              className="text-4xl bg-primary rounded-full cursor-pointer opacity-50 text-white absolute left-10 top-[50%] -translate-y-[50%] hover:opacity-100 hidden group-hover:block z-50"
+            />
+          )}
+
+          {roadmaps.map((roadmap, index) => (
+            <RoadmapItem
+              key={index}
+              title={roadmap.title}
+              description={roadmap.description}
+              current={roadmap.current}
+            />
+          ))}
+          {roadmaps.length && (
+            <IoIosArrowForward
+              onClick={slideRight}
+              className="text-4xl bg-primary rounded-full cursor-pointer opacity-50 text-white absolute right-10 top-[50%] -translate-y-[50%] hover:opacity-100 hidden group-hover:block z-50"
+            />
+          )}
+        </div>
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ const RoadmapItem = ({ title, description, current }) => {
         }`}
       />
       <h1 className="text-center font-bold">{title}</h1>
-      <ul className=" h-full leading-relaxed px-2  ">
+      <ul className=" h-full w-full leading-relaxed px-2  ">
         {description &&
           Array.isArray(description) &&
           description.map((item, index) => <li key={index}>-{item}</li>)}
