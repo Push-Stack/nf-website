@@ -1,6 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+
 import ImageItem from "./ImageItem";
+import { transitionDuration, upTransitions } from "../../constants/animations";
 
 const ImagesSection = () => {
   return (
@@ -12,7 +15,13 @@ const ImagesSection = () => {
         className="z-10"
         priority
       />
-      <div className="w-full flex-wrap flex flex-col px-4 items-center justify-center sm:flex-row gap-10 lg:gap-16 relative z-20">
+      <motion.div
+        className="w-full flex-wrap flex flex-col px-4 items-center justify-center sm:flex-row gap-10 lg:gap-16 relative z-20"
+        initial={upTransitions.initialState}
+        whileInView={upTransitions.animateState}
+        transition={transitionDuration}
+        viewport={{ once: true }}
+      >
         <div className="relative">
           <ImageItem
             src="/static/play-games.png"
@@ -38,7 +47,7 @@ const ImagesSection = () => {
             spanText="Money"
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

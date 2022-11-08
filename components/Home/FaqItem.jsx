@@ -1,5 +1,7 @@
 import React, { useMemo } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { motion } from "framer-motion";
+import { opacityTransitions } from "../../constants/animations";
 
 const FaqItem = ({ question, answer, id, changeItem, showItem }) => {
   const activeItem = useMemo(() => {
@@ -36,9 +38,12 @@ const FaqItem = ({ question, answer, id, changeItem, showItem }) => {
         )}
       </div>
       {activeItem && (
-        <div className="leading-loose font-medium whitespace-pre-wrap">
+        <motion.div
+          className="leading-loose font-medium whitespace-pre-wrap"
+          variants={opacityTransitions}
+        >
           {answer}
-        </div>
+        </motion.div>
       )}
     </div>
   );

@@ -1,11 +1,16 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import { blurTransition, viewPort } from "../../constants/animations";
 
 const PrizePool = () => {
   return (
-    <section
+    <motion.section
       className="relative text-white flex items-center justify-center lg:justify-around"
       id="prizepool-section"
+      initial={blurTransition.initialState}
+      whileInView={blurTransition.viewTransition}
+      viewport={viewPort}
     >
       <Image
         src="/static/prizepool-background.png"
@@ -57,7 +62,7 @@ const PrizePool = () => {
           height={661}
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

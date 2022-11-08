@@ -1,6 +1,14 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { motion } from "framer-motion";
+import {
+  blurTransition,
+  transitionDuration,
+  upTransitions,
+  viewPort,
+} from "../../constants/animations";
+
 import { pageLinks } from "../../constants/pageLinks";
 import { roadmaps } from "../../constants/roadmap";
 import RoadmapItem from "./RoadmapItem";
@@ -32,15 +40,26 @@ const OurRoadmap = () => {
         className="z-10"
         priority
       />
-      <div className="relative z-20 flex flex-col gap-2 items-center px-4">
-        <h1 className="text-3xl sm:text-4xl font-bold text-white tracking-wider uppercase ">
+      <motion.div
+        className="relative z-20 flex flex-col gap-2 items-center px-4"
+        initial={blurTransition.initialState}
+        whileInView={blurTransition.viewTransition}
+        viewport={{ once: true }}
+      >
+        <h1 className="text-3xl sm:text-4xl font-bold text-white tracking-wider uppercase">
           Our <span className="text-secondary ">Roadmap</span>
         </h1>
         <p className="text-white uppercase text-center text-lg tracking-wide ">
           How we are bringing the arcade to the metaverse
         </p>
-      </div>
-      <div className="w-full group relative z-20 ">
+      </motion.div>
+      <motion.div
+        className="w-full group relative z-20"
+        initial={upTransitions.initialState}
+        whileInView={upTransitions.animateState}
+        transition={transitionDuration}
+        viewPort={viewPort}
+      >
         <div
           ref={sliderRef}
           className="pl-4 pr-10  w-full pt-14 max-w-7xl mx-auto flex   overflow-x-auto   scroll-smooth scrollbar-hide "
@@ -67,7 +86,7 @@ const OurRoadmap = () => {
             />
           )}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

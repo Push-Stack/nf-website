@@ -1,6 +1,9 @@
 import Image from "next/image";
 import React, { useCallback, useState } from "react";
+import { motion } from "framer-motion";
 import { faqs } from "../../constants/faqs";
+import { transitionDuration, upTransitions } from "../../constants/animations";
+
 import { pageLinks } from "../../constants/pageLinks";
 import FaqItem from "./FaqItem";
 
@@ -13,7 +16,7 @@ const Faqs = () => {
   return (
     <section
       id={pageLinks.faqs.replace("#", "")}
-      className="text-white py-14 relative px-1"
+      className="text-white py-14 relative px-1 transition-height"
     >
       <Image
         src="/static/faq-bg.png"
@@ -26,7 +29,13 @@ const Faqs = () => {
         <h1 className="text-3xl text-center sm:text-4xl font-bold text-white tracking-wider uppercase">
           Faqs
         </h1>
-        <div className="w-full flex flex-col items-center gap-4">
+        <motion.div
+          className="w-full flex flex-col items-center gap-4"
+          initial={upTransitions.initialState}
+          whileInView={upTransitions.animateState}
+          transition={transitionDuration}
+          viewport={{ once: true }}
+        >
           {faqs.map((faq, index) => (
             <FaqItem
               question={faq.question}
@@ -37,7 +46,7 @@ const Faqs = () => {
               showItem={showItem}
             />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

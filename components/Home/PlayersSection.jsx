@@ -1,9 +1,17 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import { blurTransition, viewPort } from "../../constants/animations";
 
 const PlayersSection = () => {
   return (
-    <section className="relative  pt-48 pb-36" id="players-section">
+    <motion.section
+      className="relative  pt-48 pb-36"
+      id="players-section"
+      initial={blurTransition.initialState}
+      whileInView={blurTransition.viewTransition}
+      viewport={viewPort}
+    >
       <Image
         src="/static/player-section-bg.png"
         fill
@@ -21,7 +29,7 @@ const PlayersSection = () => {
           <span className="block">Win cash prizes daily</span>
         </h4>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,11 +1,16 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import { blurTransition, viewPort } from "../../constants/animations";
 
 const OurPartners = () => {
   return (
-    <section
+    <motion.section
       className="py-20 flex flex-col items-center gap-10 relative"
       id="our-partners"
+      initial={blurTransition.initialState}
+      whileInView={blurTransition.viewTransition}
+      viewport={viewPort}
     >
       <Image
         src="/static/ourpartners-background.png"
@@ -26,7 +31,7 @@ const OurPartners = () => {
           height={538}
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

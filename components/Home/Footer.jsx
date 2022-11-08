@@ -3,11 +3,18 @@ import React from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
 
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import { opacityTransitions, viewPort } from "../../constants/animations";
 import { pageLinks } from "../../constants/pageLinks";
 
 const Footer = () => {
   return (
-    <footer className="py-14 bg-black text-white relative">
+    <motion.footer
+      className="py-14 bg-black text-white relative"
+      initial={opacityTransitions.initialState}
+      whileInView={opacityTransitions.animateState}
+      viewport={viewPort}
+    >
       <div className="px-4 max-w-xl mx-auto flex flex-col gap-8">
         <ul className="max-w-lg font-bold flex justify-evenly transition uppercase">
           <li className="hover:text-gray-200 cursor-pointer">
@@ -69,7 +76,7 @@ const Footer = () => {
       >
         <AiOutlineArrowUp className="text-4xl p-1 md:p-0 bg-primary text-black md:text-white md:bg-transparent transition md:hover:bg-primary rounded-l-md opacity-80 md:opacity-100 md:rounded-full" />
       </Link>
-    </footer>
+    </motion.footer>
   );
 };
 
