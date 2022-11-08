@@ -58,7 +58,7 @@ const OurRoadmap = () => {
         initial={upTransitions.initialState}
         whileInView={upTransitions.animateState}
         transition={transitionDuration}
-        viewPort={viewPort}
+        viewport={viewPort}
       >
         <div
           ref={sliderRef}
