@@ -2,7 +2,12 @@ import Image from "next/image";
 import React, { useCallback, useState } from "react";
 import { motion } from "framer-motion";
 import { faqs } from "../../constants/faqs";
-import { transitionDuration, upTransitions } from "../../constants/animations";
+import {
+  blurTransition,
+  transitionDuration,
+  upTransitions,
+  viewPort,
+} from "../../constants/animations";
 
 import { pageLinks } from "../../constants/pageLinks";
 import FaqItem from "./FaqItem";
@@ -25,7 +30,12 @@ const Faqs = () => {
         className="z-10"
         priority
       />
-      <div className="px-2 relative z-20 max-w-4xl mx-auto flex flex-col gap-10">
+      <motion.div
+        className="px-2 relative z-20 max-w-4xl mx-auto flex flex-col gap-10"
+        initial={blurTransition.initialState}
+        whileInView={blurTransition.viewTransition}
+        viewport={viewPort}
+      >
         <h1 className="text-3xl text-center sm:text-4xl font-bold text-white tracking-wider uppercase">
           Faqs
         </h1>
@@ -47,7 +57,7 @@ const Faqs = () => {
             />
           ))}
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };

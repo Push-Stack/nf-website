@@ -33,7 +33,7 @@ const OurExperience = () => {
         <Image
           src="/static/our-experience.png"
           alt="our-experience"
-          width={750}
+          width={600}
           height={538}
         />
       </div>

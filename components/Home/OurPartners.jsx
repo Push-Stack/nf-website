@@ -27,7 +27,7 @@ const OurPartners = () => {
         <Image
           src="/static/ourpartners-logo.png"
           alt="ourpartners-logo"
-          width={750}
+          width={600}
           height={538}
         />
       </div>
