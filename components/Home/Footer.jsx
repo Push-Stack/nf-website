@@ -1,11 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import { AiOutlineArrowUp } from "react-icons/ai";
+
 import { Link } from "react-scroll";
 import { pageLinks } from "../../constants/pageLinks";
 
 const Footer = () => {
   return (
-    <footer className="py-14 bg-black text-white">
+    <footer className="py-14 bg-black text-white relative">
       <div className="px-4 max-w-xl mx-auto flex flex-col gap-8">
         <ul className="max-w-lg font-bold flex justify-evenly transition uppercase">
           <li className="hover:text-gray-200 cursor-pointer">
@@ -57,6 +59,16 @@ const Footer = () => {
           Copyright &copy; 2022 Non Fungible Arcade. All Rights Reserved
         </div>
       </div>
+      <Link
+        to={pageLinks.header}
+        spy={true}
+        smooth={true}
+        offset={-180}
+        duration={500}
+        className="cursor-pointer mt-2 md:mt-0  md:p-2 absolute right-0 md:right-5 bottom-0 md:bottom-auto md:top-[50%] md:-translate-y-[50%] "
+      >
+        <AiOutlineArrowUp className="text-4xl p-1 md:p-0 bg-primary text-black md:text-white md:bg-transparent transition md:hover:bg-primary rounded-sm opacity-80 md:opacity-100 md:rounded-full" />
+      </Link>
     </footer>
   );
 };

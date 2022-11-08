@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Header = () => {
   return (
-    <header className="pt-16 pb-40 relative ">
+    <header className="pt-16 pb-40 relative" id={pageLinks.header}>
       <Image
         src="/static/header.png"
         fill
