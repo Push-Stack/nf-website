@@ -67,7 +67,7 @@ const Footer = () => {
         duration={500}
         className="cursor-pointer mt-2 md:mt-0  md:p-2 absolute right-0 md:right-5 bottom-0 md:bottom-auto md:top-[50%] md:-translate-y-[50%] "
       >
-        <AiOutlineArrowUp className="text-4xl p-1 md:p-0 bg-primary text-black md:text-white md:bg-transparent transition md:hover:bg-primary rounded-sm opacity-80 md:opacity-100 md:rounded-full" />
+        <AiOutlineArrowUp className="text-4xl p-1 md:p-0 bg-primary text-black md:text-white md:bg-transparent transition md:hover:bg-primary rounded-l-md opacity-80 md:opacity-100 md:rounded-full" />
       </Link>
     </footer>
   );

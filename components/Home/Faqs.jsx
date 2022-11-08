@@ -13,7 +13,7 @@ const Faqs = () => {
   return (
     <section
       id={pageLinks.faqs.replace("#", "")}
-      className="text-white py-14 relative "
+      className="text-white py-14 relative px-1"
     >
       <Image
         src="/static/faq-bg.png"
