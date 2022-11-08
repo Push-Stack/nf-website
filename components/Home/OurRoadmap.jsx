@@ -47,7 +47,7 @@ const OurRoadmap = () => {
           {roadmaps.length && (
             <IoIosArrowBack
               onClick={slideLeft}
-              className="text-4xl bg-primary rounded-full cursor-pointer opacity-50 text-white absolute left-10 top-[50%] -translate-y-[50%] hover:opacity-100 hidden group-hover:block z-50"
+              className="text-4xl bg-primary rounded-full cursor-pointer opacity-50 text-white absolute left-10 top-[50%] -translate-y-[50%] hover:opacity-100 hidden group-hover:sm:block z-50"
             />
           )}
 
@@ -62,7 +62,7 @@ const OurRoadmap = () => {
           {roadmaps.length && (
             <IoIosArrowForward
               onClick={slideRight}
-              className="text-4xl bg-primary rounded-full cursor-pointer opacity-50 text-white absolute right-10 top-[50%] -translate-y-[50%] hover:opacity-100 hidden group-hover:block z-50"
+              className="text-4xl bg-primary rounded-full cursor-pointer opacity-50 text-white absolute right-10 top-[50%] -translate-y-[50%] hover:opacity-100 hidden group-hover:sm:block z-50"
             />
           )}
         </div>
