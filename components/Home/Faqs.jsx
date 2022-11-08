@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useCallback, useState } from "react";
 import { faqs } from "../../constants/faqs";
+import { pageLinks } from "../../constants/pageLinks";
 import FaqItem from "./FaqItem";
 
 const Faqs = () => {
@@ -10,7 +11,10 @@ const Faqs = () => {
     setItem(item);
   }, []);
   return (
-    <section id="faqs" className="text-white py-14 relative ">
+    <section
+      id={pageLinks.faqs.replace("#", "")}
+      className="text-white py-14 relative "
+    >
       <Image
         src="/static/faq-bg.png"
         fill

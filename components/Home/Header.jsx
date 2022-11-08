@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+import { pageLinks } from "../../constants/pageLinks";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -14,13 +15,31 @@ const Header = () => {
       <div className="flex justify-center relative z-20 ">
         <ul className="text-white font-medium uppercase flex gap-6 sm:gap-32 text-md sm:text-lg">
           <li className="hover:text-gray-200">
-            <Link href="/">Play</Link>
+            <a href={pageLinks.play}>Play</a>
           </li>
           <li className="hover:text-gray-200">
-            <Link href="/">Roadmap</Link>
+            <Link
+              to={pageLinks.roadmap}
+              spy={true}
+              smooth={true}
+              offset={-180}
+              duration={500}
+              className="cursor-pointer"
+            >
+              Roadmap
+            </Link>
           </li>
           <li className="hover:text-gray-200">
-            <Link href="/">Faq</Link>
+            <Link
+              to={pageLinks.faqs}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="cursor-pointer"
+            >
+              Faq
+            </Link>
           </li>
         </ul>
       </div>
@@ -30,12 +49,12 @@ const Header = () => {
           The Premier Gaming Platform
         </h1>
 
-        <Link
-          href="/"
+        <a
+          href={pageLinks.play}
           className="uppercase bg-primary font-bold py-2 px-5 rounded-full hover:bg-primary/90 transition-all"
         >
           Start Playing
-        </Link>
+        </a>
       </div>
     </header>
   );

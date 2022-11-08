@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { pageLinks } from "../../constants/pageLinks";
 import { roadmaps } from "../../constants/roadmap";
 import RoadmapItem from "./RoadmapItem";
 
@@ -21,7 +22,7 @@ const OurRoadmap = () => {
 
   return (
     <section
-      id="roadmap"
+      id={pageLinks.roadmap.replace("#", "")}
       className="py-16 text-white relative flex flex-col gap-20"
     >
       <Image
