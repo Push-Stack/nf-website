@@ -47,7 +47,7 @@ const Footer = () => {
         <div className="max-w-lg flex items-center  justify-evenly  relative">
           <a href={pageLinks.discord} target="_blank" rel="noreferrer">
             <Image
-              src="/static/discord.png"
+              src="static/discord.png"
               alt="discord-icon"
               className="cursor-pointer"
               width={30}
@@ -57,7 +57,7 @@ const Footer = () => {
 
           <a href={pageLinks.twitter} target="_blank" rel="noreferrer">
             <Image
-              src="/static/twitter.png"
+              src="static/twitter.png"
               alt="twitter-icon"
               width={38}
               height={29}

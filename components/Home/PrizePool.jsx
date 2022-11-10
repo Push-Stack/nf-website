@@ -13,7 +13,7 @@ const PrizePool = () => {
       viewport={viewPort}
     >
       <Image
-        src="/static/prizepool-background.png"
+        src="static/prizepool-background.png"
         fill
         alt="prizepool-background"
         className="z-10"
@@ -21,7 +21,7 @@ const PrizePool = () => {
       />
 
       <Image
-        src="/static/prizepool-gradient.png"
+        src="static/prizepool-gradient.png"
         fill
         alt="prizepool-gradient"
         className="z-10  "
@@ -56,7 +56,7 @@ const PrizePool = () => {
 
       <div className="hidden lg:block relative w-2/5 pt-16 z-20 self-end">
         <Image
-          src="/static/prizepool-character.png"
+          src="static/prizepool-character.png"
           alt="prizepool-character"
           width={578}
           height={661}

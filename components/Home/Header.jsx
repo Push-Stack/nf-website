@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="pt-16 pb-40 relative" id={pageLinks.header}>
       <Image
-        src="/static/header.png"
+        src="static/header.png"
         fill
         alt="header-cover"
         className="z-10"
@@ -44,7 +44,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="mt-14 flex flex-col items-center justify-center gap-9 text-white relative z-20  ">
-        <Image src="/static/logo.png" width={312} height={164} alt="logo" />
+        <Image src="static/logo.png" width={312} height={164} alt="logo" />
         <h1 className="font-bold text-3xl sm:text-6xl max-w-4xl text-center uppercase">
           The Premier Gaming Platform
         </h1>

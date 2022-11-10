@@ -34,7 +34,7 @@ const OurRoadmap = () => {
       className="py-16 text-white relative flex flex-col gap-20"
     >
       <Image
-        src="/static/roadmap-bg.png"
+        src="static/roadmap-bg.png"
         alt="ourroadmap-background"
         fill
         className="z-10"

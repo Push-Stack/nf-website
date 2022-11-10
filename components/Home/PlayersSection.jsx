@@ -13,7 +13,7 @@ const PlayersSection = () => {
       viewport={viewPort}
     >
       <Image
-        src="/static/player-section-bg.png"
+        src="static/player-section-bg.png"
         fill
         alt="player-section-background"
         className="z-10"

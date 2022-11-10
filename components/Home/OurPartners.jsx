@@ -13,7 +13,7 @@ const OurPartners = () => {
       viewport={viewPort}
     >
       <Image
-        src="/static/ourpartners-background.png"
+        src="static/ourpartners-background.png"
         alt="ourpartners-background"
         fill
         className="z-10"
@@ -25,7 +25,7 @@ const OurPartners = () => {
       </h1>
       <div className="relative px-4  z-20  text-white">
         <Image
-          src="/static/ourpartners-logo.png"
+          src="static/ourpartners-logo.png"
           alt="ourpartners-logo"
           width={600}
           height={538}
