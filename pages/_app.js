@@ -10,7 +10,7 @@ import {
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence mode="wait">
       <Head>
         <title>Non Fungible Arcade</title>
       </Head>
