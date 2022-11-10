@@ -2,5 +2,5 @@ export const pageLinks = {
   header: "header",
   roadmap: "roadmap",
   faqs: "faqs",
-  play: "/arcade-room/",
+  play: "https://nonfungiblearcade.com/arcade-room/",
 };
