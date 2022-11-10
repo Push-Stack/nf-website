@@ -25,7 +25,7 @@ const OurExperience = () => {
           Our <span className="text-secondary ">Experience</span>
         </h1>
         <p className="text-white uppercase text-center text-lg sm:text-2xl tracking-wide ">
-          Here are a few of the brands that we've worked with:
+          {"Here are a few of the brands that we've worked with:"}
         </p>
       </div>
 

@@ -9,7 +9,7 @@ const FaqItem = ({ question, answer, id, changeItem, showItem }) => {
       return true;
     }
     return false;
-  }, [showItem]);
+  }, [showItem, id]);
 
   const showHideItem = () => {
     if (activeItem) {

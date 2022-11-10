@@ -53,7 +53,11 @@ const Footer = () => {
             height={36}
           />
 
-          <a href="https://twitter.com/NFArcade" target="_blank">
+          <a
+            href="https://twitter.com/NFArcade"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               src="/static/twitter.png"
               alt="twitter-icon"
