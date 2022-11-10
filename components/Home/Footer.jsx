@@ -45,19 +45,17 @@ const Footer = () => {
           </li>
         </ul>
         <div className="max-w-lg flex items-center  justify-evenly  relative">
-          <Image
-            src="/static/discord.png"
-            alt="discord-icon"
-            className="cursor-pointer"
-            width={30}
-            height={36}
-          />
+          <a href={pageLinks.discord} target="_blank" rel="noreferrer">
+            <Image
+              src="/static/discord.png"
+              alt="discord-icon"
+              className="cursor-pointer"
+              width={30}
+              height={36}
+            />
+          </a>
 
-          <a
-            href="https://twitter.com/NFArcade"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={pageLinks.twitter} target="_blank" rel="noreferrer">
             <Image
               src="/static/twitter.png"
               alt="twitter-icon"
