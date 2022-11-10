@@ -48,13 +48,21 @@ const Header = () => {
         <h1 className="font-bold text-3xl sm:text-6xl max-w-4xl text-center uppercase">
           The Premier Gaming Platform
         </h1>
+        <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-between gap-6  max-w-lg mx-auto">
+          <a
+            href={pageLinks.play}
+            className="uppercase bg-primary font-bold py-2 px-5 rounded-full hover:bg-primary/90 transition-all"
+          >
+            Start Playing
+          </a>
 
-        <a
-          href={pageLinks.play}
-          className="uppercase bg-primary font-bold py-2 px-5 rounded-full hover:bg-primary/90 transition-all"
-        >
-          Start Playing
-        </a>
+          <a
+            href={pageLinks.rebelRun}
+            className="uppercase bg-primary font-bold py-2 px-5 rounded-full hover:bg-primary/90 transition-all"
+          >
+            Rebel Run
+          </a>
+        </div>
       </div>
     </header>
   );
