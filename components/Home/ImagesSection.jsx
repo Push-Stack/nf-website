@@ -9,7 +9,7 @@ const ImagesSection = () => {
   return (
     <section className="relative py-16" id="images-section">
       <Image
-        src="static/image-section-bg.png"
+        src="/static/image-section-bg.png"
         fill
         alt="image-section-background"
         className="z-10"
@@ -24,7 +24,7 @@ const ImagesSection = () => {
       >
         <div className="relative">
           <ImageItem
-            src="static/play-games.png"
+            src="/static/play-games.png"
             alt="play-games"
             mainText="Play"
             spanText="Games"
@@ -32,7 +32,7 @@ const ImagesSection = () => {
         </div>
         <div className="relative">
           <ImageItem
-            src="static/earn-tickets.png"
+            src="/static/earn-tickets.png"
             alt="earn-tickets"
             mainText="Earn"
             spanText="Tickets"
@@ -41,7 +41,7 @@ const ImagesSection = () => {
 
         <div className="relative">
           <ImageItem
-            src="static/win-money.png"
+            src="/static/win-money.png"
             alt="win-money"
             mainText="Win"
             spanText="Money"

@@ -13,7 +13,7 @@ const PlayersSection = () => {
       viewport={viewPort}
     >
       <Image
-        src="static/player-section-bg.png"
+        src="/static/player-section-bg.png"
         fill
         alt="player-section-background"
         className="z-10"
@@ -24,10 +24,10 @@ const PlayersSection = () => {
         <h1 className="text-3xl sm:text-4xl text-secondary tracking-wider">
           Where Players come to play
         </h1>
-        <h4 className="text-lg sm:text-2xl max-w-3xl mx-auto tracking-widest">
+        <h2 className="text-lg sm:text-2xl max-w-3xl mx-auto tracking-widest">
           Play Games, Earn Tickets, &
           <span className="block">Win cash prizes daily</span>
-        </h4>
+        </h2>
       </div>
     </motion.section>
   );

@@ -13,7 +13,7 @@ const PrizePool = () => {
       viewport={viewPort}
     >
       <Image
-        src="static/prizepool-background.png"
+        src="/static/prizepool-background.png"
         fill
         alt="prizepool-background"
         className="z-10"
@@ -21,7 +21,7 @@ const PrizePool = () => {
       />
 
       <Image
-        src="static/prizepool-gradient.png"
+        src="/static/prizepool-gradient.png"
         fill
         alt="prizepool-gradient"
         className="z-10  "
@@ -32,10 +32,10 @@ const PrizePool = () => {
           Win the Prize Pool
         </h1>
         <div className="flex flex-col gap-2">
-          <h3 className="text-xl sm:text-2xl lg:max-w-sm">
+          <h2 className="text-xl sm:text-2xl lg:max-w-sm">
             Show off your skills,earn tickets,
             <span className="block">and dominate the leader board</span>
-          </h3>
+          </h2>
           <h3 className=" text-xl sm:text-2xl text-secondary font-bold lg:max-w-xs uppercase">
             Benefits of the Prize <span className="lg:block">Pool:</span>
           </h3>
@@ -56,7 +56,7 @@ const PrizePool = () => {
 
       <div className="hidden lg:block relative w-2/5 pt-16 z-20 self-end">
         <Image
-          src="static/prizepool-character.png"
+          src="/static/prizepool-character.png"
           alt="prizepool-character"
           width={578}
           height={661}

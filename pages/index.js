@@ -1,12 +1,17 @@
-import Faqs from "../components/Home/Faqs";
-import Footer from "../components/Home/Footer";
+import dynamic from "next/dynamic";
+
 import Header from "../components/Home/Header";
 import ImagesSection from "../components/Home/ImagesSection";
-import OurExperience from "../components/Home/OurExperience";
-import OurPartners from "../components/Home/OurPartners";
-import OurRoadmap from "../components/Home/OurRoadmap";
-import PlayersSection from "../components/Home/PlayersSection";
-import PrizePool from "../components/Home/PrizePool";
+
+const PlayersSection = dynamic(() =>
+  import("../components/Home/PlayersSection")
+);
+const PrizePool = dynamic(() => import("../components/Home/PrizePool"));
+const OurPartners = dynamic(() => import("../components/Home/OurPartners"));
+const OurRoadmap = dynamic(() => import("../components/Home/OurRoadmap"));
+const OurExperience = dynamic(() => import("../components/Home/OurExperience"));
+const Faqs = dynamic(() => import("../components/Home/Faqs"));
+const Footer = dynamic(() => import("../components/Home/Footer"));
 
 export default function Home() {
   return (

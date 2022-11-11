@@ -13,7 +13,7 @@ const OurExperience = () => {
       viewport={viewPort}
     >
       <Image
-        src="static/ourexperience-bg.png"
+        src="/static/ourexperience-bg.png"
         alt="ourexperience-background"
         fill
         className="z-10"
@@ -31,7 +31,7 @@ const OurExperience = () => {
 
       <div className="relative px-4  z-20  text-white">
         <Image
-          src="static/our-experience.png"
+          src="/static/our-experience.png"
           alt="our-experience"
           width={600}
           height={538}

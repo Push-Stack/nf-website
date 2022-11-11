@@ -24,7 +24,7 @@ const Faqs = () => {
       className="text-white py-14 relative px-1 transition-height"
     >
       <Image
-        src="static/faq-bg.png"
+        src="/static/faq-bg.png"
         fill
         alt="gaqs-background"
         className="z-10"

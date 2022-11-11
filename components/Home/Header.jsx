@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="pt-16 pb-40 relative" id={pageLinks.header}>
       <Image
-        src="static/header.png"
+        src="/static/header.png"
         fill
         alt="header-cover"
         className="z-10"
@@ -25,6 +25,7 @@ const Header = () => {
               offset={-180}
               duration={500}
               className="cursor-pointer"
+              href={`#${pageLinks.roadmap}`}
             >
               Roadmap
             </Link>
@@ -37,15 +38,17 @@ const Header = () => {
               offset={-70}
               duration={500}
               className="cursor-pointer"
+              href={`#${pageLinks.faqs}`}
             >
               Faq
             </Link>
           </li>
         </ul>
       </div>
-      <div className="mt-14 flex flex-col items-center justify-center gap-9 text-white relative z-20  ">
-        <Image src="static/logo.png" width={312} height={164} alt="logo" />
-        <h1 className="font-bold text-3xl sm:text-6xl max-w-4xl text-center uppercase">
+      <div className="mt-14 flex flex-col items-center justify-center gap-9 text-white relative z-20 ">
+        <Image src="/static/logo.png" width={312} height={164} alt="logo" />
+
+        <h1 className="px-2 font-bold text-3xl sm:text-6xl max-w-4xl text-center uppercase">
           The Premier Gaming Platform
         </h1>
         <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-between gap-6  max-w-lg mx-auto">
