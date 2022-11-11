@@ -7,7 +7,7 @@ import PlayersSectionBg from "../../public/static/player-section-bg.png";
 const PlayersSection = () => {
   return (
     <motion.section
-      className="relative  pt-48 pb-36 max-w-full overflow-hidden"
+      className="relative  py-52 max-w-full overflow-hidden"
       id="players-section"
       initial={blurTransition.initialState}
       whileInView={blurTransition.viewTransition}

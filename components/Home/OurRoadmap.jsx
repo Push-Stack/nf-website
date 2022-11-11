@@ -31,7 +31,7 @@ const OurRoadmap = () => {
   return (
     <section
       id={pageLinks.roadmap.replace("#", "")}
-      className="py-16 text-white relative flex flex-col gap-20 max-w-full"
+      className="py-24 text-white relative flex flex-col gap-20 max-w-full"
     >
       <Image
         src={RoadmapBg}

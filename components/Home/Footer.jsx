@@ -10,7 +10,7 @@ import { pageLinks } from "../../constants/pageLinks";
 const Footer = () => {
   return (
     <motion.footer
-      className="py-14 bg-black text-white relative"
+      className="py-20 bg-black text-white relative"
       initial={opacityTransitions.initialState}
       whileInView={opacityTransitions.animateState}
       viewport={viewPort}

@@ -11,7 +11,7 @@ import WinMoney from "../../public/static/win-money.png";
 const ImagesSection = () => {
   return (
     <section
-      className="relative py-16 max-w-full overflow-hidden"
+      className="relative py-28 max-w-full overflow-hidden"
       id="images-section"
     >
       <Image

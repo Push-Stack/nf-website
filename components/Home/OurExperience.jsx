@@ -8,7 +8,7 @@ import Logos from "../../public/static/our-experience.png";
 const OurExperience = () => {
   return (
     <motion.section
-      className="py-20 flex flex-col items-center gap-10 relative max-w-full"
+      className="py-28 flex flex-col items-center gap-10 relative max-w-full"
       id="our-partners"
       initial={blurTransition.initialState}
       whileInView={blurTransition.viewTransition}

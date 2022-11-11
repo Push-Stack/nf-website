@@ -22,7 +22,7 @@ const Faqs = () => {
   return (
     <section
       id={pageLinks.faqs.replace("#", "")}
-      className="text-white py-14 relative px-1 transition-height max-w-full overflow-hidden"
+      className="text-white py-20 relative px-1 transition-height max-w-full overflow-hidden"
     >
       <Image
         src={FaqsBg}
