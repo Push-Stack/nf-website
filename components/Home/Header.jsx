@@ -1,15 +1,20 @@
 import Image from "next/image";
 import { pageLinks } from "../../constants/pageLinks";
 import { Link } from "react-scroll";
+import HeaderImage from "../../public/static/header.png";
+import Logo from "../../public/static/logo.png";
 
 const Header = () => {
   return (
-    <header className="pt-16 pb-40 relative" id={pageLinks.header}>
+    <header
+      className="pt-16 pb-40  w-full max-w-full   relative  overflow-hidden"
+      id={pageLinks.header}
+    >
       <Image
-        src="/static/header.png"
+        src={HeaderImage}
         fill
         alt="header-cover"
-        className="z-10"
+        className="z-10 object-cover"
         priority
       />
       <div className="flex justify-center relative z-20 ">
@@ -45,8 +50,16 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="mt-14 flex flex-col items-center justify-center gap-9 text-white relative z-20 ">
-        <Image src="/static/logo.png" width={312} height={164} alt="logo" />
+      <div className="mt-14 flex flex-col items-center justify-center gap-9 text-white relative z-20 overflow-hidden ">
+        <div className="relative h-40 w-full max-w-xs">
+          <Image
+            src={Logo}
+            fill
+            alt="logo"
+            priority
+            className="object-contain"
+          />
+        </div>
 
         <h1 className="px-2 font-bold text-3xl sm:text-6xl max-w-4xl text-center uppercase">
           The Premier Gaming Platform

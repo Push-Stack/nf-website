@@ -2,28 +2,29 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { blurTransition, viewPort } from "../../constants/animations";
+import PrizePoolBg from "../../public/static/prizepool-background.png";
+import GradientBg from "../../public/static/prizepool-gradient.png";
 
 const PrizePool = () => {
   return (
     <motion.section
-      className="relative text-white flex items-center justify-center lg:justify-around"
+      className="relative text-white flex items-center justify-center lg:justify-around max-w-full overflow-hidden"
       id="prizepool-section"
       initial={blurTransition.initialState}
       whileInView={blurTransition.viewTransition}
       viewport={viewPort}
     >
       <Image
-        src="/static/prizepool-background.png"
+        src={PrizePoolBg}
         fill
         alt="prizepool-background"
-        className="z-10"
-        priority
+        className="z-10 object-cover"
       />
 
       <Image
-        src="/static/prizepool-gradient.png"
+        src={GradientBg}
         fill
-        alt="prizepool-gradient"
+        alt="prizepool-gradient object-cover"
         className="z-10  "
       />
 
@@ -54,7 +55,7 @@ const PrizePool = () => {
         </div>
       </div>
 
-      <div className="hidden lg:block relative w-2/5 pt-16 z-20 self-end">
+      <div className="hidden lg:block relative w-2/5   pt-16 z-20 self-end ">
         <Image
           src="/static/prizepool-character.png"
           alt="prizepool-character"

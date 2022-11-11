@@ -1,19 +1,24 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-
 import ImageItem from "./ImageItem";
 import { transitionDuration, upTransitions } from "../../constants/animations";
+import ImageSectionBg from "../../public/static/image-section-bg.png";
+import PlayGames from "../../public/static/play-games.png";
+import EarnTickets from "../../public/static/earn-tickets.png";
+import WinMoney from "../../public/static/win-money.png";
 
 const ImagesSection = () => {
   return (
-    <section className="relative py-16" id="images-section">
+    <section
+      className="relative py-16 max-w-full overflow-hidden"
+      id="images-section"
+    >
       <Image
-        src="/static/image-section-bg.png"
+        src={ImageSectionBg}
         fill
         alt="image-section-background"
-        className="z-10"
-        priority
+        className="z-10 object-cover"
       />
       <motion.div
         className="w-full flex-wrap flex flex-col px-4 items-center justify-center sm:flex-row gap-10 lg:gap-16 relative z-20"
@@ -22,26 +27,26 @@ const ImagesSection = () => {
         transition={transitionDuration}
         viewport={{ once: true }}
       >
-        <div className="relative">
+        <div className="relative max-w-xs ">
           <ImageItem
-            src="/static/play-games.png"
+            src={PlayGames}
             alt="play-games"
             mainText="Play"
             spanText="Games"
           />
         </div>
-        <div className="relative">
+        <div className="relative max-w-xs ">
           <ImageItem
-            src="/static/earn-tickets.png"
+            src={EarnTickets}
             alt="earn-tickets"
             mainText="Earn"
             spanText="Tickets"
           />
         </div>
 
-        <div className="relative">
+        <div className="relative max-w-xs ">
           <ImageItem
-            src="/static/win-money.png"
+            src={WinMoney}
             alt="win-money"
             mainText="Win"
             spanText="Money"

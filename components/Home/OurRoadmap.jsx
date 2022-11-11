@@ -8,10 +8,10 @@ import {
   upTransitions,
   viewPort,
 } from "../../constants/animations";
-
 import { pageLinks } from "../../constants/pageLinks";
 import { roadmaps } from "../../constants/roadmap";
 import RoadmapItem from "./RoadmapItem";
+import RoadmapBg from "../../public/static/roadmap-bg.png";
 
 const OurRoadmap = () => {
   const sliderRef = useRef(null);
@@ -31,14 +31,13 @@ const OurRoadmap = () => {
   return (
     <section
       id={pageLinks.roadmap.replace("#", "")}
-      className="py-16 text-white relative flex flex-col gap-20"
+      className="py-16 text-white relative flex flex-col gap-20 max-w-full"
     >
       <Image
-        src="/static/roadmap-bg.png"
+        src={RoadmapBg}
         alt="ourroadmap-background"
         fill
         className="z-10"
-        priority
       />
       <motion.div
         className="relative z-20 flex flex-col gap-2 items-center px-4"

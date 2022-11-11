@@ -2,22 +2,22 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { blurTransition, viewPort } from "../../constants/animations";
+import PlayersSectionBg from "../../public/static/player-section-bg.png";
 
 const PlayersSection = () => {
   return (
     <motion.section
-      className="relative  pt-48 pb-36"
+      className="relative  pt-48 pb-36 max-w-full overflow-hidden"
       id="players-section"
       initial={blurTransition.initialState}
       whileInView={blurTransition.viewTransition}
       viewport={viewPort}
     >
       <Image
-        src="/static/player-section-bg.png"
+        src={PlayersSectionBg}
         fill
         alt="player-section-background"
-        className="z-10"
-        priority
+        className="z-10 object-cover"
       />
       <div className="absolute z-20 inset-0 h-full w-full bg-black/70" />
       <div className="text-white font-bold max-w-6xl mx-auto text-center uppercase flex flex-col gap-4 relative z-20">

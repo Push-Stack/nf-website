@@ -11,6 +11,7 @@ import {
 
 import { pageLinks } from "../../constants/pageLinks";
 import FaqItem from "./FaqItem";
+import FaqsBg from "../../public/static/faq-bg.png";
 
 const Faqs = () => {
   const [showItem, setItem] = useState(null);
@@ -21,14 +22,13 @@ const Faqs = () => {
   return (
     <section
       id={pageLinks.faqs.replace("#", "")}
-      className="text-white py-14 relative px-1 transition-height"
+      className="text-white py-14 relative px-1 transition-height max-w-full overflow-hidden"
     >
       <Image
-        src="/static/faq-bg.png"
+        src={FaqsBg}
         fill
-        alt="gaqs-background"
-        className="z-10"
-        priority
+        alt="faqs-background"
+        className="z-10 object-cover"
       />
       <motion.div
         className="px-2 relative z-20 max-w-4xl mx-auto flex flex-col gap-10"
