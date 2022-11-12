@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { pageLinks } from "../../constants/pageLinks";
 import { Link } from "react-scroll";
 import HeaderImage from "../../public/static/header.png";
@@ -77,6 +78,13 @@ const Header = () => {
             className="uppercase bg-primary font-bold py-2 px-5 rounded-full hover:bg-primary/90 transition-all"
           >
             Rebel Run
+          </a>
+
+          <a
+            href={`/about`}
+            className="uppercase bg-primary font-bold py-2 px-5 rounded-full hover:bg-primary/90 transition-all"
+          >
+            About
           </a>
         </div>
       </div>
