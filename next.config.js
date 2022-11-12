@@ -9,6 +9,11 @@ const nextConfig = {
         destination: "/arcade-room/index.html",
         permanent: true,
       },
+      {
+        source: "/rebel-run",
+        destination: "/rebel-run/index.html",
+        permanent: true,
+      },
     ];
   },
 };
