@@ -79,13 +79,6 @@ const Header = () => {
           >
             Rebel Run
           </a>
-
-          <a
-            href={`/about`}
-            className="uppercase bg-primary font-bold py-2 px-5 rounded-full hover:bg-primary/90 transition-all"
-          >
-            About
-          </a>
         </div>
       </div>
     </header>
