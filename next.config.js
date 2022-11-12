@@ -4,8 +4,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/about",
-        destination: "/usama/index.html",
+        source: "/arcade-room/",
+        destination: "/arcade-room/index.html",
       },
     ];
   },
