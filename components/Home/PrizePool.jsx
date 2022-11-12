@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { blurTransition, viewPort } from "../../constants/animations";
 import PrizePoolBg from "../../public/static/prizepool-background.png";
 import GradientBg from "../../public/static/prizepool-gradient.png";
+import PrizePoolCharacter from "../../public/static/prizepool-character.png";
 
 const PrizePool = () => {
   return (
@@ -55,9 +56,9 @@ const PrizePool = () => {
         </div>
       </div>
 
-      <div className="hidden lg:block relative w-2/5   pt-16 z-20 self-end ">
+      <div className="hidden lg:block relative w-2/5 pt-16 z-20 self-end ">
         <Image
-          src="/static/prizepool-character.png"
+          src={PrizePoolCharacter}
           alt="prizepool-character"
           width={578}
           height={661}

@@ -6,6 +6,8 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { opacityTransitions, viewPort } from "../../constants/animations";
 import { pageLinks } from "../../constants/pageLinks";
+import TwitterIcon from "../../public/static/twitter.png";
+import DiscordIcon from "../../public/static/discord.png";
 
 const Footer = () => {
   return (
@@ -49,7 +51,7 @@ const Footer = () => {
         <div className="max-w-lg flex items-center  justify-evenly  relative">
           <a href={pageLinks.discord} target="_blank" rel="noreferrer">
             <Image
-              src="/static/discord.png"
+              src={DiscordIcon}
               alt="discord-icon"
               className="cursor-pointer"
               width={30}
@@ -59,7 +61,7 @@ const Footer = () => {
 
           <a href={pageLinks.twitter} target="_blank" rel="noreferrer">
             <Image
-              src="/static/twitter.png"
+              src={TwitterIcon}
               alt="twitter-icon"
               width={38}
               height={29}
