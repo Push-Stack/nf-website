@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  async rewrites() {
+
+  async redirects() {
     return [
       {
-        source: "/arcade-room/",
+        source: "/arcade-room",
         destination: "/arcade-room/index.html",
+        permanent: true,
       },
     ];
   },
