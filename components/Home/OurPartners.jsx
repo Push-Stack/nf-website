@@ -19,13 +19,14 @@ const OurPartners = () => {
         alt="ourpartners-background"
         fill
         className="z-10 object-cover"
+        priority
       />
       <div className="absolute z-20 inset-0 h-full w-full bg-black/80" />
       <h1 className="text-3xl sm:text-4xl font-bold text-white tracking-wider uppercase relative z-20">
         Our <span className="text-secondary">Partners</span>
       </h1>
-      <div className="relative px-4  z-20  text-white">
-        <Image src={Logos} alt="ourpartners-logo" width={600} height={538} />
+      <div className="relative px-4  z-20  text-white max-w-full overflow-hidden ">
+        <Image src={Logos} alt="ourpartners-logo" className="object-cover" />
       </div>
     </motion.section>
   );

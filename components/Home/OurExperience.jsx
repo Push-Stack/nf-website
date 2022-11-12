@@ -8,7 +8,7 @@ import Logos from "../../public/static/our-experience.png";
 const OurExperience = () => {
   return (
     <motion.section
-      className="py-28 flex flex-col items-center gap-10 relative max-w-full"
+      className="py-28 flex flex-col items-center gap-10 relative max-w-full overflow-hidden"
       id="our-partners"
       initial={blurTransition.initialState}
       whileInView={blurTransition.viewTransition}
@@ -18,7 +18,7 @@ const OurExperience = () => {
         src={OurExperienceBg}
         alt="ourexperience-background"
         fill
-        className="z-10"
+        className="z-10 object-cover"
       />
       <div className="absolute z-20 inset-0 h-full w-full bg-black/50" />
       <div className="relative z-20 flex flex-col gap-6 items-center px-4">
@@ -30,8 +30,8 @@ const OurExperience = () => {
         </p>
       </div>
 
-      <div className="relative px-4  z-20  text-white">
-        <Image src={Logos} alt="our-experience" width={600} height={538} />
+      <div className="relative px-4  z-20  text-white max-w-full overflow-hidden">
+        <Image src={Logos} alt="our-experience" className="object-cover" />
       </div>
     </motion.section>
   );

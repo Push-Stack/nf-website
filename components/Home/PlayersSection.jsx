@@ -18,6 +18,7 @@ const PlayersSection = () => {
         fill
         alt="player-section-background"
         className="z-10 object-cover"
+        priority
       />
       <div className="absolute z-20 inset-0 h-full w-full bg-black/70" />
       <div className="text-white font-bold max-w-6xl mx-auto text-center uppercase flex flex-col gap-4 relative z-20">

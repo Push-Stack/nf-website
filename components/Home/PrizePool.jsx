@@ -20,13 +20,14 @@ const PrizePool = () => {
         fill
         alt="prizepool-background"
         className="z-10 object-cover"
+        priority
       />
 
       <Image
         src={GradientBg}
         fill
-        alt="prizepool-gradient object-cover"
-        className="z-10  "
+        alt="prizepool-gradient "
+        className="z-10 object-cover "
       />
 
       <div className="px-6  lg:px-6 w-full lg:w-3/5 max-w-2xl mx-auto py-16  flex flex-col gap-4 relative z-20 ">

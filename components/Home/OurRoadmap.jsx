@@ -31,13 +31,14 @@ const OurRoadmap = () => {
   return (
     <section
       id={pageLinks.roadmap.replace("#", "")}
-      className="py-24 text-white relative flex flex-col gap-20 max-w-full"
+      className="py-24 text-white relative flex flex-col gap-20 max-w-full overflow-hidden"
     >
       <Image
         src={RoadmapBg}
         alt="ourroadmap-background"
         fill
-        className="z-10"
+        className="z-10 object-cover"
+        priority
       />
       <motion.div
         className="relative z-20 flex flex-col gap-2 items-center px-4"

@@ -19,6 +19,7 @@ const ImagesSection = () => {
         fill
         alt="image-section-background"
         className="z-10 object-cover"
+        priority
       />
       <motion.div
         className="w-full flex-wrap flex flex-col px-4 items-center justify-center sm:flex-row gap-10 lg:gap-16 relative z-20"

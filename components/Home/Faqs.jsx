@@ -29,6 +29,7 @@ const Faqs = () => {
         fill
         alt="faqs-background"
         className="z-10 object-cover"
+        priority
       />
       <motion.div
         className="px-2 relative z-20 max-w-4xl mx-auto flex flex-col gap-10"
