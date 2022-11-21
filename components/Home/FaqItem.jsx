@@ -39,7 +39,7 @@ const FaqItem = ({ question, answer, id, changeItem, showItem }) => {
       </div>
       {activeItem && (
         <motion.div
-          className="leading-loose font-medium whitespace-pre-wrap"
+          className="leading-[1.8] font-medium whitespace-pre-wrap"
           variants={opacityTransitions}
         >
           {answer}
