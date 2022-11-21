@@ -2,13 +2,13 @@ import Image from "next/image";
 
 import { pageLinks } from "../../constants/pageLinks";
 import { Link } from "react-scroll";
-import HeaderImage from "../../public/static/header-2.jpg";
+import HeaderImage from "../../public/static/header-3.jpg";
 import Logo from "../../public/static/logo.png";
 
 const Header = () => {
   return (
     <header
-      className="pt-16 pb-40 min-h-screen  w-full max-w-full   relative  overflow-hidden"
+      className="pt-16 pb-40 sm:min-h-screen  w-full max-w-full   relative  overflow-hidden "
       id={pageLinks.header}
     >
       <Image
@@ -18,7 +18,7 @@ const Header = () => {
         className="z-10 object-cover"
         priority
       />
-      <div className="absolute z-20 inset-0 h-full w-full bg-black/70" />
+      <div className="absolute z-20 inset-0 h-full w-full bg-black/80 " />
       <div className="flex justify-center relative z-20 ">
         <ul className="text-white font-medium uppercase flex gap-6 sm:gap-32 text-md sm:text-lg">
           <li className="hover:text-gray-200">
@@ -52,7 +52,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="mt-14 flex flex-col items-center justify-center gap-9 text-white relative z-20 overflow-hidden ">
+      <div className="mt-24   flex flex-col items-center justify-center gap-9 text-white relative z-20 overflow-hidden ">
         <div className="relative h-40 w-full max-w-xs">
           <Image
             src={Logo}
