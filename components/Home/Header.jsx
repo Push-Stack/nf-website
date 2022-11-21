@@ -8,7 +8,7 @@ import Logo from "../../public/static/logo.png";
 const Header = () => {
   return (
     <header
-      className="pt-16 pb-40 sm:min-h-screen  w-full max-w-full   relative  overflow-hidden "
+      className="pt-16 pb-40 min-h-screen  w-full max-w-full   relative  overflow-hidden "
       id={pageLinks.header}
     >
       <Image

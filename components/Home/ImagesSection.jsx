@@ -18,7 +18,7 @@ const ImagesSection = () => {
         src={ImageSectionBg}
         fill
         alt="image-section-background"
-        className="z-10 object-cover"
+        className="z-10 object-center sm:object-cover"
         priority
       />
       <motion.div
