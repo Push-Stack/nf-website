@@ -6,7 +6,7 @@ import ImagesSection from "../components/Home/ImagesSection";
 const PlayersSection = dynamic(() =>
   import("../components/Home/PlayersSection")
 );
-const PrizePool = dynamic(() => import("../components/Home/PrizePool"));
+
 const OurPartners = dynamic(() => import("../components/Home/OurPartners"));
 const OurRoadmap = dynamic(() => import("../components/Home/OurRoadmap"));
 const OurExperience = dynamic(() => import("../components/Home/OurExperience"));
