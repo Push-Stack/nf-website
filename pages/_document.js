@@ -5,42 +5,35 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="description" content="NFA The Premier Gaming Platform" />
-        <link rel="icon" href="static/icons/icon-48x48.png" type="image/png" />
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: light)"
+          content="cyan"
+        />
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: dark)"
+          content="black"
+        />
         <link
           rel="apple-touch-icon"
-          sizes="72x72"
-          href="static/icons/icon-72x72.png"
+          sizes="180x180"
+          href="static/icons/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="static/icons/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="static/icons/favicon-16x16.png"
         />
 
-        <link
-          rel="apple-touch-icon"
-          sizes="96x96"
-          href="static/icons/icon-96x96.png"
-        />
-
-        <link
-          rel="apple-touch-icon"
-          sizes="144x144"
-          href="static/icons/icon-144x144.png"
-        />
-
-        <link
-          rel="apple-touch-icon"
-          sizes="192x192"
-          href="static/icons/icon-192x192.png"
-        />
-
-        <link
-          rel="apple-touch-icon"
-          sizes="256x256"
-          href="static/icons/icon-256x256.png"
-        />
-
-        <link
-          rel="apple-touch-icon"
-          sizes="384x384"
-          href="static/icons/icon-384x384.png"
-        />
+        <link rel="manifest" href="static/icons/site.webmanifest" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
