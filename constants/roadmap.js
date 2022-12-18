@@ -1,8 +1,47 @@
 export const roadmaps = [
   {
+    current: false,
+    title: "Q4 2021",
+    description: ["The Vision is born", "Citadel Slayer' is started for fun"],
+  },
+  {
+    current: false,
+    title: "Q1 2022",
+    description: [
+      "Main game development begins",
+      "Core Team expands",
+      "IP Partners slated",
+    ],
+  },
+  {
+    current: false,
+    title: "Q2 2022",
+    description: [
+      "Model for a gaming platform is laid out",
+      "Development continues",
+      "Core Team expands",
+    ],
+  },
+  {
+    current: false,
+    title: "Q3 2022",
+    description: [
+      "Closed testing of two main games",
+      "Blockchain infrastructure setup",
+      "Partnerships secured with leading companies in the industry",
+    ],
+  },
+
+  {
     current: true,
     title: "Q4 2022",
-    description: ["Building out product platform"],
+    description: [
+      "Raise 275k after 1 year of bootstrap development to further develop platform and hire",
+      "Core Team expands",
+      "Revolutionary ecosystem design and testing",
+      "Preseason Launch slated for December 26th",
+      "Building out product platform",
+    ],
   },
 
   {
