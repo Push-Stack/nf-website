@@ -6,7 +6,7 @@ const nextConfig = {
     return [
       {
         source: "/arcade-room",
-        destination: "/arcade-room/index.html",
+        destination: "/rebel-run/index.html",
         permanent: true,
       },
       {
