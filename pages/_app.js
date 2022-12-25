@@ -6,6 +6,7 @@ import {
   opacityTransitions,
   transitionDuration,
 } from "../constants/animations";
+import OgNfa from "../public/static/og-nfa.png";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -13,6 +14,8 @@ function MyApp({ Component, pageProps }) {
     <AnimatePresence mode="wait">
       <Head>
         <title>Non Fungible Arcade</title>
+        <meta name="description" content="NFA The Premier Gaming Platform" />
+        <meta name="og:image" content={OgNfa.src} />
       </Head>
       <motion.div
         key={router.route}

@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta name="description" content="NFA The Premier Gaming Platform" />
         <meta
           name="theme-color"
           media="(prefers-color-scheme: light)"
