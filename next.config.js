@@ -5,7 +5,7 @@ const ContentSecurityPolicy = `
   script-src 'self';
   child-src 'self';
   style-src 'self' 'unsafe-inline';
-  font-src 'self' https://fonts.googleapis.com;
+  font-src 'self' 'https://fonts.googleapis.com' 'https://fonts.g/static.com' 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap';
   img-src 'self';  
 `;
 
