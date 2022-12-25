@@ -4,7 +4,6 @@ const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self';
   child-src 'self';
-  style-src 'unsafe-inline';
   font-src 'self' https://fonts.googleapis.com;
   img-src 'self';  
 `;
