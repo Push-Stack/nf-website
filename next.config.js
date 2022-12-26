@@ -5,7 +5,7 @@ const ContentSecurityPolicy = `
   script-src 'self' https://www.nfa.gg 'unsafe-inline' 'unsafe-eval';
  
   child-src 'self' https://www.nfa.gg;
-  worker-src 'self' https://www.nfa.gg;
+  worker-src 'self' https://www.nfa.gg blob:;
  
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   font-src https://fonts.gstatic.com;
