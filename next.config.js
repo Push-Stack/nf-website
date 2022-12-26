@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 
 const ContentSecurityPolicy = `
-  default-src 'self';
+  default-src 'self' https://www.nfa.gg data: blob:;
   script-src 'self' https://www.nfa.gg 'unsafe-inline' 'unsafe-eval';
  
   child-src 'self' https://www.nfa.gg;
-  worker-src 'self' https://www.nfa.gg blob:;
+  
  
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   font-src https://fonts.gstatic.com;
