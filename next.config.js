@@ -1,16 +1,15 @@
 /** @type {import('next').NextConfig} */
 
-const ContentSecurityPolicy = `
-  default-src 'self' https://www.nfa.gg data: blob:;
-  script-src 'self' https://www.nfa.gg 'unsafe-inline' 'unsafe-eval';
- 
-  child-src 'self' https://www.nfa.gg;
-  
- 
-  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-  font-src https://fonts.gstatic.com;
-  img-src 'self';  
-`;
+// const ContentSecurityPolicy = `
+//   default-src 'self' https://www.nfa.gg data: blob:;
+//   script-src 'self' https://www.nfa.gg 'unsafe-inline' 'unsafe-eval';
+
+//   child-src 'self' https://www.nfa.gg;
+
+//   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+//   font-src https://fonts.gstatic.com;
+//   img-src 'self';
+// `;
 
 const securityHeaders = [
   {
@@ -31,10 +30,10 @@ const securityHeaders = [
     value: "nosniff",
   },
 
-  {
-    key: "Content-Security-Policy",
-    value: ContentSecurityPolicy.replace(/\s{2,}/g, " ").trim(),
-  },
+  // {
+  //   key: "Content-Security-Policy",
+  //   value: ContentSecurityPolicy.replace(/\s{2,}/g, " ").trim(),
+  // },
 ];
 
 const nextConfig = {
