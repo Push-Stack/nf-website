@@ -3,9 +3,9 @@
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-inline' 'unsafe-eval';
-  script-src-elem 'unsafe-inline';
+ 
   child-src 'self';
-  worker-src blob:;
+  worker-src 'self' blob:;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   font-src https://fonts.gstatic.com;
   img-src 'self';  
